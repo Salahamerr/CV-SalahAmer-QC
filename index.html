@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif; /* استخدام خط Roboto */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
@@ -21,65 +21,66 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #ffffff; /* خلفية بيضاء */
+            background-color: #ffffff;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px; /* زوايا مدورة */
+            border-radius: 8px;
         }
         .contact-info {
             display: flex;
-            justify-content: space-around; /* توزيع العناصر بشكل أفقي */
+            justify-content: center; /* جعل العناصر في الوسط */
+            align-items: center;
             gap: 20px;
-            width: 100%; /* جعل العرض 100% لمحاذاة جيدة */
+            flex-wrap: wrap; /* السماح بالانتقال إلى الصف التالي في الشاشات الصغيرة */
+            width: 100%;
             margin-top: 10px;
-            font-size: 16px; /* تكبير حجم النص لتحسين الوضوح */
+            font-size: 16px;
         }
-        .social-buttons {
+        .contact-info span {
             display: flex;
-            gap: 10px;
-            margin-top: 10px; /* مسافة أعلى الأزرار */
+            align-items: center; /* محاذاة الأيقونة مع النص عموديًا */
         }
         .social-button {
             padding: 10px 15px;
-            background-color: #0073e6; /* لون الخلفية */
+            background-color: #0073e6;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            text-decoration: none; /* إزالة التسطير */
+            text-decoration: none;
             font-weight: bold;
         }
         .social-button:hover {
-            background-color: #005bb5; /* لون الخلفية عند التحويم */
+            background-color: #005bb5;
         }
         section {
-            margin-top: 20px; /* مساحة بين الأقسام */
+            margin-top: 20px;
             padding: 15px;
-            background-color: #ffffff; /* لون خلفية الأقسام */
-            border-radius: 8px; /* زوايا مدورة للأقسام */
+            background-color: #ffffff;
+            border-radius: 8px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #0073e6; /* تغيير لون العناوين */
-            border-bottom: 2px solid #0073e6; /* خط تحت العنوان */
-            padding-bottom: 5px; /* إضافة مسافة أسفل العنوان */
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 5px;
         }
         ul {
-            list-style-type: none; /* إزالة الرموز من القوائم */
-            padding: 0; /* إزالة الحشوة الافتراضية */
+            list-style-type: none;
+            padding: 0;
         }
         ul li {
-            margin: 10px 0; /* مسافة بين العناصر في القوائم */
-            padding: 10px; /* إضافة حشوة داخل العناصر */
-            border: 1px solid #e0e0e0; /* إطار حول العناصر */
-            border-radius: 5px; /* زوايا مدورة للعناصر */
-            background-color: #f9f9f9; /* لون خلفية للعناصر */
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
         .divider {
-            border: 1px solid #e0e0e0; /* فاصل أفقي */
-            margin: 20px 0; /* مسافة فوق وتحت الفاصل */
+            border: 1px solid #e0e0e0;
+            margin: 20px 0;
         }
         .icon {
-            margin-right: 5px; /* مسافة بين الأيقونة والنص */
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -89,11 +90,9 @@
         <h1>Salah Amer</h1>
         <h2>Software Testing Engineer</h2>
         <div class="contact-info">
-            <span><i class="fas fa-envelope icon"></i>Email: <a href="mailto:SalahQC0@gmail.com">SalahQC0@gmail.com</a></span>
+            <span><i class="fas fa-envelope icon"></i>Email: <a href="mailto:salahqc0@gmail.com">salahqc0@gmail.com</a></span>
             <span><i class="fas fa-phone-alt icon"></i>Phone: 01099298505</span>
             <span><i class="fas fa-map-marker-alt icon"></i>Location: New Damietta</span>
-        </div>
-        <div class="social-buttons">
             <a class="social-button" href="https://www.linkedin.com/in/salahamer/" target="_blank">LinkedIn</a>
         </div>
     </header>
@@ -182,4 +181,3 @@
 
 </body>
 </html>
-
