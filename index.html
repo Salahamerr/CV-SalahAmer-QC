@@ -6,9 +6,10 @@
     <meta name="description" content="Salah Amer's CV">
     <title>Salah Amer - Software Testing Engineer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif; /* تحديث الخط إلى Roboto */
+            font-family: 'Roboto', sans-serif; /* استخدام خط Roboto */
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
@@ -20,42 +21,47 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #ffffff;
+            background-color: #ffffff; /* خلفية بيضاء */
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px; /* إضافة زوايا مدورة للرأس */
-        }
-        header img {
-            border-radius: 50%; /* جعل الصورة دائرية */
-            width: 100px; /* عرض الصورة */
-            height: 100px; /* ارتفاع الصورة */
-            margin-bottom: 10px; /* مسافة أسفل الصورة */
+            border-radius: 8px; /* زوايا مدورة */
         }
         .contact-info {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-around; /* توزيع العناصر بشكل أفقي */
             gap: 20px;
-            width: 100%;
+            width: 100%; /* جعل العرض 100% لمحاذاة جيدة */
             margin-top: 10px;
-            font-size: 16px;
+            font-size: 16px; /* تكبير حجم النص لتحسين الوضوح */
         }
-        a {
-            color: #0073e6;
-            text-decoration: none;
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px; /* مسافة أعلى الأزرار */
         }
-        a:hover {
-            text-decoration: underline;
+        .social-button {
+            padding: 10px 15px;
+            background-color: #0073e6; /* لون الخلفية */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* إزالة التسطير */
+            font-weight: bold;
+        }
+        .social-button:hover {
+            background-color: #005bb5; /* لون الخلفية عند التحويم */
+        }
+        section {
+            margin-top: 20px; /* مساحة بين الأقسام */
+            padding: 15px;
+            background-color: #ffffff; /* لون خلفية الأقسام */
+            border-radius: 8px; /* زوايا مدورة للأقسام */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #0073e6; /* تغيير لون العناوين */
             border-bottom: 2px solid #0073e6; /* خط تحت العنوان */
             padding-bottom: 5px; /* إضافة مسافة أسفل العنوان */
-        }
-        section {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #ffffff; /* لون خلفية الأقسام */
-            border-radius: 8px; /* زوايا مدورة للأقسام */
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
         ul {
             list-style-type: none; /* إزالة الرموز من القوائم */
@@ -68,19 +74,27 @@
             border-radius: 5px; /* زوايا مدورة للعناصر */
             background-color: #f9f9f9; /* لون خلفية للعناصر */
         }
+        .divider {
+            border: 1px solid #e0e0e0; /* فاصل أفقي */
+            margin: 20px 0; /* مسافة فوق وتحت الفاصل */
+        }
+        .icon {
+            margin-right: 5px; /* مسافة بين الأيقونة والنص */
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="your-photo-url.jpg" alt="Salah Amer"> <!-- أدخل رابط الصورة هنا -->
         <h1>Salah Amer</h1>
         <h2>Software Testing Engineer</h2>
         <div class="contact-info">
-            <span>Email: <a href="mailto:salahqc0@gmail.com">salahqc0@gmail.com</a></span>
-            <span>Phone: 01099298505</span>
-            <span>Location: New Damietta</span>
-            <span><a href="https://www.linkedin.com/in/salahamer/" target="_blank">LinkedIn Profile</a></span>
+            <span><i class="fas fa-envelope icon"></i>Email: <a href="mailto:salahqc0@gmail.com">salahqc0@gmail.com</a></span>
+            <span><i class="fas fa-phone-alt icon"></i>Phone: 01099298505</span>
+            <span><i class="fas fa-map-marker-alt icon"></i>Location: New Damietta</span>
+        </div>
+        <div class="social-buttons">
+            <a class="social-button" href="https://www.linkedin.com/in/salahamer/" target="_blank">LinkedIn</a>
         </div>
     </header>
 
@@ -88,6 +102,8 @@
         <h2>Summary</h2>
         <p>Software Testing Engineer with 1.5 years of hands-on experience in all levels of testing, including functional, integration, system, regression, and user acceptance testing. I have effectively contributed to more than 14 diverse projects and am particularly skilled in e-commerce and Marketplace platforms. I also have a lot of accounting experience from working on two Odoo projects. I am skilled in Manual, Mobile, and API testing, with deep knowledge of SDLC, Agile methodologies, and collaboration tools like Jira and Azure. Additionally, I have basic knowledge of Selenium, Java, and C.</p>
     </section>
+
+    <div class="divider"></div>
 
     <section>
         <h2>Work Experience</h2>
@@ -99,37 +115,43 @@
         </ul>
     </section>
 
+    <div class="divider"></div>
+
     <section>
         <h2>Projects</h2>
         <ul>
-            <li><strong>Yaschools:</strong> School search platform (YaSchools, June 2024 - Present)</li>
-            <li><strong>Seeds:</strong> A platform for teaching children programming (Algoriza)</li>
-            <li><strong>TechPass:</strong> Online coding test platform (Algoriza)</li>
-            <li><strong>Meta:</strong> Integrated E-commerce platform (ABG, Jan 2024)</li>
-            <li><strong>Rimonda:</strong> Integrated E-commerce platform (ABG, Dec 2023)</li>
-            <li><strong>Ecomerg:</strong> First integrated platform in Kuwait (ABG, Nov 2023)</li>
-            <li><strong>CRM:</strong> Customer Relationship Management System (ABG, Dec 2023 - Jan 2024)</li>
-            <li><strong>Vendor:</strong> Integrated E-commerce platform (ABG, Dec 2023)</li>
-            <li><strong>Clara:</strong> E-commerce and affiliate marketing platform (ABG, Dec 2023)</li>
-            <li><strong>Asia:</strong> Integrated E-commerce platform (ABG, Nov 2023)</li>
-            <li><strong>Okkaz:</strong> Integrated E-commerce platform (ABG, Nov 2023)</li>
-            <li><strong>SFA:</strong> Supplies and sales management system (ABG, Oct 2023 - Mar 2024)</li>
-            <li><strong>LIS:</strong> Dentist clinic system (ABG, Nov 2023)</li>
-            <li><strong>Odoo (Tasses):</strong> API Testing for student registration (ABG, Nov 2023)</li>
-            <li><strong>Odoo (QBS):</strong> API Testing for buying and selling management (ABG, Oct 2023)</li>
-            <li><strong>Lefties App:</strong> Mobile testing (IOS) (UTEST, Jun 2023)</li>
+            <li><strong>Yaschools</strong>: School search platform (YaSchools, June 2024 - Present)</li>
+            <li><strong>Seeds</strong>: A platform for teaching children programming (Algoriza)</li>
+            <li><strong>TechPass</strong>: Online coding test platform (Algoriza)</li>
+            <li><strong>Meta</strong>: Integrated E-commerce platform (ABG, Jan 2024)</li>
+            <li><strong>Rimonda</strong>: Integrated E-commerce platform (ABG, Dec 2023)</li>
+            <li><strong>Ecomerg</strong>: First integrated platform in Kuwait (ABG, Nov 2023)</li>
+            <li><strong>CRM</strong>: Customer Relationship Management System (ABG, Dec 2023 - Jan 2024)</li>
+            <li><strong>Vendor</strong>: Integrated E-commerce platform (ABG, Dec 2023)</li>
+            <li><strong>Clara</strong>: E-commerce and affiliate marketing platform (ABG, Dec 2023)</li>
+            <li><strong>Asia</strong>: Integrated E-commerce platform (ABG, Nov 2023)</li>
+            <li><strong>Okkaz</strong>: Integrated E-commerce platform (ABG, Nov 2023)</li>
+            <li><strong>SFA</strong>: Supplies and sales management system (ABG, Oct 2023 - Mar 2024)</li>
+            <li><strong>LIS</strong>: Dentist clinic system (ABG, Nov 2023)</li>
+            <li><strong>Odoo (Tasses)</strong>: API Testing for student registration (ABG, Nov 2023)</li>
+            <li><strong>Odoo (QBS)</strong>: API Testing for buying and selling management (ABG, Oct 2023)</li>
+            <li><strong>Lefties App</strong>: Mobile testing (IOS) (UTEST, Jun 2023)</li>
         </ul>
     </section>
+
+    <div class="divider"></div>
 
     <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>ISTQB Foundation Level (Certified):</strong> qacart, 2023</li>
-            <li><strong>Manual Testing (Certified):</strong> qacart, 2023</li>
-            <li><strong>SQL Basics (Certified):</strong> qacart, 2023</li>
-            <li><strong>Effective Test Case and Bug Report Writing Techniques:</strong> TI, 2022</li>
+            <li><strong>ISTQB Foundation Level (Certified)</strong>: qacart, 2023</li>
+            <li><strong>Manual Testing (Certified)</strong>: qacart, 2023</li>
+            <li><strong>SQL Basics (Certified)</strong>: qacart, 2023</li>
+            <li><strong>Effective Test Case and Bug Report Writing Techniques</strong>: TI, 2022</li>
         </ul>
     </section>
+
+    <div class="divider"></div>
 
     <section>
         <h2>Technical Skills</h2>
@@ -147,14 +169,17 @@
         </ul>
     </section>
 
+    <div class="divider"></div>
+
     <section>
         <h2>Languages</h2>
         <ul>
-            <li>Basics of French</li>
-            <li>Arabic (Native)</li>
-            <li>English (Fluent)</li>
+            <li><strong>Basics of French</strong></li>
+            <li><strong>Arabic (Native)</strong></li>
+            <li><strong>English (Fluent)</strong></li>
         </ul>
     </section>
 
 </body>
 </html>
+
